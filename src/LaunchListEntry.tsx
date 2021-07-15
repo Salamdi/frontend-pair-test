@@ -16,7 +16,7 @@ const LaunchListEntry: React.FC<Props> = ({entry}) => {
 
     return (<>
         <div className="App-list-entry-title" data-testid="entryContainer">
-            <h4 className="App-title-clickable" onClick={onEntryClicked}>
+            <h4 className="App-title-clickable" onClick={onEntryClicked} data-testid="missionName">
                 {entry.mission_name}
             </h4>
             <h5>{entry.launch_date_utc}</h5>
